@@ -1,0 +1,41 @@
+{
+  "name": "@kamiswap/testnet-token-list",
+  "version": "0.0.1",
+  "description": "◦ The kamiswap testnet token list",
+  "main": "dist/kamiswap-testnet.tokenlist.json",
+  "scripts": {
+    "test": "mocha",
+    "build": "rimraf build && mkdir -p dist && node internal/write.js > dist/kamiswap-testnet.tokenlist.json",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "files": [
+    "dist/kamiswap-testnet.tokenlist.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamiswap-lab/testnet-token-list.git"
+  },
+  "keywords": [
+    "kamiswap",
+    "testnet",
+    "token",
+    "list"
+  ],
+  "author": "RGUITI Ayoub",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kamiswap-lab/testnet-token-list/issues"
+  },
+  "homepage": "https://github.com/kamiswap-lab/testnet-token-list#readme",
+  "devDependencies": {
+    "@ethersproject/address": "^5.0.2",
+    "@uniswap/token-lists": "^1.0.0-beta.19",
+    "ajv": "^6.12.3",
+    "chai": "^4.2.0",
+    "lodash": "^4.17.21",
+    "mocha": "^8.0.1",
+    "rimraf": "^3.0.2",
+    "config": "workspace:*",
+    "builder": "workspace:*"
+  }
+}

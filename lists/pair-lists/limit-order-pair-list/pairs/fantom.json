@@ -1,0 +1,15 @@
+[
+  ["USDC", "WFTM"],
+  ["WETH", "WFTM"],
+  ["fUSDT", "WFTM"],
+  ["DAI", "WETH"],
+  ["USDC", "MIM"],
+  ["WETH", "WBTC"],
+  ["KAMI", "WFTM"],
+  ["SUSHI", "WFTM"],
+  ["WFTM", "LINK"],
+  ["WETH", "CRV"],
+  ["WETH", "YFI"],
+  ["WFTM", "ICE"],
+  ["WFTM", "LCD"]
+]

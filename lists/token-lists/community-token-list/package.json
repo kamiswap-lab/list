@@ -1,0 +1,40 @@
+{
+  "name": "@kamiswap/community-token-list",
+  "version": "0.0.0",
+  "description": "◦ The Kamiswap community token list",
+  "main": "dist/kamiswap-community.tokenlist.json",
+  "scripts": {
+    "test": "mocha",
+    "build": "rimraf build && mkdir -p dist && node internal/write.js > dist/kamiswap-community.tokenlist.json",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "files": [
+    "dist/kamiswap-community.tokenlist.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamiswap-lab/list.git"
+  },
+  "keywords": [
+    "kamiswap",
+    "default",
+    "token",
+    "list"
+  ],
+  "author": "RGUITI Ayoub",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kamiswap-lab/list/issues"
+  },
+  "homepage": "https://github.com/kamiswap-lab/list#readme",
+  "devDependencies": {
+    "@ethersproject/address": "^5.0.2",
+    "@uniswap/token-lists": "^1.0.0-beta.19",
+    "ajv": "^6.12.3",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "rimraf": "^3.0.2",
+    "config": "workspace:*",
+    "builder": "workspace:*"
+  }
+}
